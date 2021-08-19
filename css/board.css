@@ -1,0 +1,252 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2021. 8. 2, 오전 6:29:27
+    Author     : JuwonPark
+*/
+
+body {
+    margin: 0;
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+/* Top Bars */
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: chocolate;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+    padding: 8px 12px;
+}
+.topbar_logo {
+    font-size: 24px;
+}
+.topbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.topbar li {
+    padding: 8px 12px;
+}
+.topbar_toggle {
+    display: none;
+    position: absolute;
+    right: 20px;
+    font-size: 24px;
+    color: brown;
+}
+
+/* Containers */
+.container {
+    margin: 0;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/wallpaper_1920_1080.jpg);
+    height: 1200px;
+    padding-top: 1px;
+}
+.div_board{
+    margin-top: 33px;
+    padding-top: 1px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: auto;
+    left: auto;
+    width: 760px;
+    height: 960px;
+    background-color: bisque;
+    padding: 30px, 20px;
+    text-align: center;
+    border-radius: 15px;
+    overflow: auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: brown;
+}
+.form_write{
+    margin-top: 33px;
+    padding-top: 1px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: auto;
+    left: auto;
+    width: 760px;
+    height: 960px;
+    background-color: bisque;
+    padding: 30px, 20px;
+    text-align: center;
+    border-radius: 15px;
+    overflow: auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: brown;
+}
+h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: brown;
+}
+#write_title{
+    width: 70%;
+    height: 40px;
+    font-size: 32px;
+    font-family: 'Nanum Brush Script', cursive;
+    border: none;
+    outline: none;
+    border-bottom: 3px dashed brown;
+    padding: 2px;
+}
+#write_pw{
+    width: 70%;
+    height: 40px;
+    font-size: 32px;
+    font-family: 'Nanum Brush Script', cursive;
+    border: none;
+    outline: none;
+    border-bottom: 3px dashed brown;
+    padding: 2px;
+}
+#write_content{
+    width: 70%;
+    height: 330px;
+    font-size: 32px;
+    font-family: 'Nanum Brush Script', cursive;
+    border: none;
+    outline: none;
+    border-bottom: 3px dashed brown;
+    padding: 2px;
+}
+#result{
+    width: 70%;
+    height: 330px;
+    font-size: 32px;
+    font-family: 'Nanum Brush Script', cursive;
+    border: none;
+    outline: none;
+    border-bottom: 3px dashed brown;
+    padding: 2px;
+}
+.row{
+    margin-top: 33px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: auto;
+    left: auto;
+    width: 760px;
+    height: 860px;
+    background-color: bisque;
+    padding: 30px, 20px;
+    text-align: center;
+    border-radius: 15px;
+    overflow: auto;
+}
+table{
+    margin: auto;
+    width: 95%;
+    top: auto;
+    border-bottom:2px dashed brown;
+    overflow: auto;
+    font-size: 24px;
+}
+thead{
+    color: brown;
+    background-color: burlywood;
+    font-size: 24px;
+    font-weight: bold;
+    overflow: auto;
+}
+tbody{
+    color: brown;
+    font-size: 24px;
+    overflow: auto;
+}
+#button_back{
+    margin-top: 20px;
+    width: 75%;
+    height: 40px;
+    font-size: 24px;
+    font-family: 'Nanum Brush Script', cursive;
+    border: none;
+    background-color: chocolate;
+    color: white;
+    overflow: auto;
+}
+#reply{
+    margin-top: 20px;
+    height: 200px;
+    overflow: auto;
+}
+#button_done{
+    margin-top: 20px;
+    width: 75%;
+    height: 40px;
+    font-size: 24px;
+    font-family: 'Nanum Brush Script', cursive;
+    border: none;
+    background-color: chocolate;
+    color: white;
+    overflow: auto;
+}
+#reply_content{
+    width: 30%;
+    height: 40px;
+    font-size: 32px;
+    font-family: 'Nanum Brush Script', cursive;
+    border: none;
+    outline: none;
+    border-bottom: 3px dashed brown;
+    padding: 2px;
+}
+#reply_password{
+    width: 30%;
+    height: 40px;
+    font-size: 32px;
+    font-family: 'Nanum Brush Script', cursive;
+    border: none;
+    outline: none;
+    border-bottom: 3px dashed brown;
+    padding: 2px;
+}
+@media screen and (max-width: 1000px) {
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    .topbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .topbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+    .topbar_toggle {
+        display: block;
+    }
+    .topbar_menu.active {
+        display: flex;
+    }
+    .row{
+        width: 430px;
+    }
+    .div_board{
+        width: 430px;
+    }
+    .form_write{
+        width: 430px;
+    }
+}
+

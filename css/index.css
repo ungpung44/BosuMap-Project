@@ -1,0 +1,89 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2021. 8. 2, 오전 6:29:27
+    Author     : JuwonPark
+*/
+
+body {
+    margin: 0;
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+/* Top Bars */
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: chocolate;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+    padding: 8px 12px;
+}
+.topbar_logo {
+    font-size: 24px;
+}
+.topbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.topbar li {
+    padding: 8px 12px;
+}
+.topbar_toggle {
+    display: none;
+    position: absolute;
+    right: 20px;
+    font-size: 24px;
+    color: brown;
+}
+
+/* Containers */
+.container {
+    margin: 0;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/wallpaper_1920_1080.jpg);
+    height: 1200px;
+    padding-top: 1px;
+}
+#text_welcome {
+    display: none;
+    font-size: 48px;
+    color: white;
+}
+#mid{
+    display: flex;
+    justify-content: center;
+    height: 1200px;
+}
+
+@media screen and (max-width: 1000px) {
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    .topbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .topbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+    .topbar_toggle {
+        display: block;
+    }
+    .topbar_menu.active {
+        display: flex;
+    }
+}
+
